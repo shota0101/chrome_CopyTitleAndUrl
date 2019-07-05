@@ -6,11 +6,18 @@ window.onload = function() {
   }, function (tabs) {
 
     let currentTab = tabs[0];
-    let copyText = '[' + currentTab.title + '](' + currentTab.url + ')';
-
-    let textarea = document.querySelector("#show");
-    textarea.textContent = copyText;
-    textarea.select();
-    document.execCommand('copy');
+    copy('[' + currentTab.title + '](' + currentTab.url + ')');
+    writeAndSelect('【' + currentTab.title + "】\n" + currentTab.url);
   });
+}
+
+function writeAndSelect(copyText) {
+  let textarea = document.querySelector("#show");
+  textarea.textContent = copyText;
+  textarea.select();
+}
+
+function copy(copyText) {
+  writeAndSelect(copyText);
+  document.execCommand('copy');
 }
