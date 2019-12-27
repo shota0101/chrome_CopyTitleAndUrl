@@ -19,10 +19,10 @@
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "default": "Ctrl+E",
-        "windows": "Ctrl+E",
-        "mac": "Ctrl+E",
-        "linux": "Ctrl+E"
+        "default": "Ctrl+I",
+        "windows": "Ctrl+I",
+        "mac": "Ctrl+I",
+        "linux": "Ctrl+I"
       }
     }
   }
