@@ -19,10 +19,10 @@
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "default": "Alt+I",
-        "windows": "Alt+I",
-        "mac": "Alt+W",
-        "linux": "Alt+I"
+        "default": "Alt+D",
+        "windows": "Alt+D",
+        "mac": "Alt+D",
+        "linux": "Alt+D"
       }
     }
   }
