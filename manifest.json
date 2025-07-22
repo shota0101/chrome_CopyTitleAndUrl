@@ -1,16 +1,15 @@
 {
   "manifest_version": 3,
   "name": "CopyTitle and URL",
-  "version": "1.0",
+  "version": "1.2",
   "description": "Copy tab title and url as markdown.",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
   "action": {
     "default_popup": "browser_action.html",
-    "default_icon": {
-      "16": "images/photocopier16.png",
-      "48": "images/photocopier48.png",
-      "128": "images/photocopier128.png"
-    }
+    "default_title": "タイトルとURLをコピー"
   },
   "icons": {
     "16": "images/photocopier16.png",
@@ -18,10 +17,12 @@
     "128": "images/photocopier128.png"
   },
   "commands": {
-    "_execute_action": {
+    "copy_shortcut": {
       "suggested_key": {
-        "default": "Alt+D"
-      }
+        "default": "Alt+D",
+        "mac": "Alt+D"
+      },
+    "description": "タイトルとURLを直接コピー"
     }
   }
 }
