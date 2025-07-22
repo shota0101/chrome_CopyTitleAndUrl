@@ -1,28 +1,26 @@
 {
-  "update_url": "https://clients2.google.com/service/update2/crx",
-  "name": "CopyTitle",
-  "version": "0.0.1",
-  "manifest_version": 2,
-  "description": "copy tab title and url as markdown",
-  "author": "Shota Hayashi",
-  "homepage_url": "https://github.com/shota0101/ShortcutBookmarkExplorer",
+  "manifest_version": 3,
+  "name": "CopyTitle and URL",
+  "version": "1.0",
+  "description": "Copy tab title and url as markdown.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "browser_action.html",
+    "default_icon": {
+      "16": "images/photocopier16.png",
+      "48": "images/photocopier48.png",
+      "128": "images/photocopier128.png"
+    }
+  },
   "icons": {
+    "16": "images/photocopier16.png",
+    "48": "images/photocopier48.png",
     "128": "images/photocopier128.png"
   },
-  "permissions": [
-    "tabs"
-  ],
-  "browser_action": {
-    "default_icon": "images/photocopier128.png",
-    "default_popup": "browser_action.html"
-  },
   "commands": {
-    "_execute_browser_action": {
+    "_execute_action": {
       "suggested_key": {
-        "default": "Alt+D",
-        "windows": "Alt+D",
-        "mac": "Alt+D",
-        "linux": "Alt+D"
+        "default": "Alt+D"
       }
     }
   }
