@@ -3,10 +3,9 @@
   "name": "CopyTitle and URL",
   "version": "1.2",
   "description": "Copy tab title and url as markdown.",
-  "permissions": [
-    "activeTab",
-    "scripting"
-  ],
+  "author": "Shota Hayashi",
+  "homepage_url": "https://github.com/shota0101/chrome_CopyTitleAndUrl",
+  "permissions": ["activeTab", "scripting"],
   "action": {
     "default_popup": "browser_action.html",
     "default_title": "タイトルとURLをコピー"
@@ -17,12 +16,14 @@
     "128": "images/photocopier128.png"
   },
   "commands": {
-    "copy_shortcut": {
+    "_execute_action": {
       "suggested_key": {
         "default": "Alt+D",
-        "mac": "Alt+D"
+        "windows": "Alt+D",
+        "mac": "Alt+D",
+        "linux": "Alt+D"
       },
-    "description": "タイトルとURLを直接コピー"
+      "description": "タイトルとURLを直接コピー"
     }
   }
 }
